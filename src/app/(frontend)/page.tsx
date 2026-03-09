@@ -1,7 +1,6 @@
 import { headers as getHeaders } from 'next/headers.js'
 import Image from 'next/image'
 import { getPayload } from 'payload'
-import React from 'react'
 import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
@@ -22,9 +21,9 @@ export default async function HomePage() {
           <source srcSet="/api/media/file/unknown.PNG" />
           <Image
             alt="Payload Logo"
-            height={65}
             src="/api/media/file/unknown.PNG"
-            width={65}
+            width={600}
+            height={600}
           />
         </picture>
         {!user && <h1>Welcome to your new project.</h1>}
